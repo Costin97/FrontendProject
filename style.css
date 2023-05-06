@@ -1,0 +1,984 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mainContainer {
+  position: relative;
+  z-index: 1;
+}
+header {
+  display: flex;
+  height: 80px;
+}
+nav {
+  width: 100%;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 80px;
+  margin-left: 12px;
+}
+
+.imgClass {
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+}
+
+img:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 6px;
+}
+
+.numberClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.numberParagraph {
+  font-family: Arial;
+  font-style: italic;
+  color: #ccc;
+  margin-left: 4px;
+  margin-bottom: 0;
+}
+
+.first {
+  width: 33%;
+  height: 100%;
+}
+
+.second {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second p {
+  margin-bottom: 0;
+}
+
+.third {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.third button {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-left: 8px;
+}
+
+.third button:hover {
+  background-color: white;
+  color: black;
+}
+.titleClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ndContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ndContainer button {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-left: 4px;
+  padding: 4px;
+  margin-bottom: 18px;
+}
+
+.ndContainer button:hover {
+  background-color: white;
+  color: black;
+}
+
+.btnLikePara {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  margin-left: 32px;
+  margin-right: 12px;
+  margin-bottom: 18px;
+}
+
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.boldedClass {
+  font-weight: bold;
+}
+
+.searchBarContainer {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.searchIconBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBarContainer svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+}
+
+.searchIconBar img:hover {
+  background-color: white;
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.shopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+  background-color: #f6f7f1;
+}
+.firstShop {
+  padding: 24px;
+}
+
+.ndShop {
+  vertical-align: top;
+  padding: 24px;
+  margin-bottom: 180px;
+}
+
+.rdShop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.shopTitle {
+  font-weight: bold;
+}
+
+.shopImg {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.shopImg:hover {
+  border-radius: 0;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+}
+.firstRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.firstRow div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondRow div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.thirdRow {
+  width: 100%;
+  margin-right: 0px;
+  padding: 12px;
+  background-color: rgb(155, 155, 54);
+}
+
+.thirdRow p {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.iconsContainer img {
+  width: 50px;
+  height: 50px;
+}
+
+.pagesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+
+.pagesContainer img {
+  width: 300px;
+  height: 220px;
+  padding: 12px;
+}
+
+.pagesContainer img:hover {
+  border-radius: 0;
+  background-color: white;
+  cursor: default;
+}
+
+.firstQ {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.secondQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.thirdQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.forthQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.firstQContainer_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 12px;
+}
+
+.firstQContainer_1 h1 {
+  font-size: 16px;
+}
+.firstQContainer_2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.firstQContainer_2 p {
+  padding: 0;
+  font-size: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.firstQContainer_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstQContainer_3 h1 {
+  font-size: 16px;
+}
+
+.firstQContainer_3 p {
+  padding: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.secondQContainer_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 12px;
+}
+
+.secondQContainer_1 h1 {
+  font-size: 16px;
+}
+.secondQContainer_2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.secondQContainer_2 p {
+  padding: 0;
+  font-size: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.secondQContainer_3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.secondQContainer_3 h1 {
+  font-size: 16px;
+}
+
+.secondQContainer_3 p {
+  padding: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.thirdQContainer_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 12px;
+}
+
+.thirdQContainer_1 h1 {
+  font-size: 16px;
+}
+.thirdQContainer_2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.thirdQContainer_2 p {
+  padding: 0;
+  font-size: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.thirdQContainer_3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.thirdQContainer_3 h1 {
+  font-size: 16px;
+}
+
+.thirdQContainer_3 p {
+  padding: 0;
+  font-size: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.forthQContainer_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 12px;
+}
+
+.forthQContainer_1 h1 {
+  font-size: 16px;
+}
+.forthQContainer_2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.forthQContainer_2 p {
+  padding: 0;
+  font-size: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.carousel-inner:hover {
+  border-radius: 0;
+  background-color: 0;
+  cursor: default;
+}
+
+.noneButtons {
+  margin-right: 24px;
+}
+
+.headerNonButtons {
+  margin-right: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.firstLogo {
+  margin-left: 16px;
+}
+
+.lastLogo {
+  margin-right: 40px;
+}
+
+.secondMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.twoImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twoImageContainer img {
+  height: 640px;
+  width: 480px;
+  border-radius: 8px;
+}
+
+.twoImageContainer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: "Bree Serif", serif;
+}
+
+.firstImage {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.secondImage {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.arrivalsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.arrivalsPara {
+  max-width: 70%;
+  color: #aaa7a7;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.thirdMainContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+  min-width: 70%;
+}
+
+.lastHeading {
+  float: right;
+}
+.thirdHeadings {
+  min-width: 80%;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.firstHalf {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.firstHalf p {
+  margin-left: 8px;
+}
+
+.specialHeading {
+  color: #a7a3a3;
+}
+
+.specialHeading:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.firstHalf p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.secondHalf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  margin-right: 12px;
+}
+
+.secondHalf p {
+  color: rgb(119, 119, 14);
+  font-weight: bold;
+}
+
+.secondHalf p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.imageRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 80%;
+}
+
+.imageRow img {
+  width: 180px;
+  height: 240px;
+  margin-left: 24px;
+}
+
+.imageRow div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.imageRow div > p {
+  margin-bottom: 4px;
+  margin-left: 24px;
+}
+
+.timerContainer {
+  background: url("utilities/timer_photo.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+  margin-top: 48px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.priceContainer {
+  width: 70%;
+  margin-left: 48px;
+  display: flex;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-left: 48px;
+  padding: 12px;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: black;
+  width: 8%;
+  background-color: rgb(215, 48, 48);
+}
+
+.timerHeading {
+  width: 70%;
+  margin-left: 48px;
+  margin-top: 80px;
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+}
+
+.secondTimerHeading {
+  width: 70%;
+  margin-left: 48px;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.countdownTimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 40%;
+  font-weight: bold;
+  height: 30%;
+  background-color: white;
+  margin-top: 48px;
+  margin-left: 48px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.rowTimer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.rowTimer div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowTimer p {
+  margin: 0;
+}
+
+.timerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 14%;
+  margin-left: 48px;
+  margin-top: 30px;
+  border: solid #000;
+  border-width: 1px;
+  margin-bottom: 48px;
+}
+
+.timerButton:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.historyPara {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 48px;
+  margin-top: 48px;
+}
+
+.historyHeading {
+  color: rgb(148, 148, 65);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiperContainer {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  width: 1200px;
+}
+
+.swiperCustom img {
+  width: 100px;
+  height: 100px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 200px;
+  background-color: #eff2f9;
+  height: 240px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.infoContainer p {
+  margin-bottom: 0;
+}
+
+.infoContainer svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.finalContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.noMargin {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.finalBox svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+
+.dropdown a:hover {
+  color: #a7a3a3;
+}
+
+.firstShop p:hover:not([class]) {
+  color: #a7a3a3;
+  cursor: pointer;
+}
+
+.ndShop p:hover:not([class]) {
+  color: #a7a3a3;
+  cursor: pointer;
+}
+
+.firstRow p {
+  font-weight: bold;
+}
+
+.firstRow p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.secondRow p {
+  font-weight: bold;
+}
+
+.secondRow p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pagesContainer p:hover:not([style]) {
+  color: black;
+  cursor: pointer;
+}
+
+.imagesContainer svg:hover {
+  cursor: pointer;
+}
+
+.finalBoxThird p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black !important;
+}
